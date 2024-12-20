@@ -4,8 +4,8 @@
   </a>
 </p>
 <p align="center">
-  <a title="Contributors" href="https://github.com/dbm-network/mods/contributors" target="_blank">
-    <img src="https://img.shields.io/github/contributors/dbm-network/mods.svg?style=flat-square" alt="Contributors" />
+  <a title="Discord" href="https://discord.gg/9HYB4n3Dz4" target="_blank">
+    <img src="https://img.shields.io/github/contributors/dbm-network/mods.svg?style=flat-square" alt="Discord" />
   </a>
   <a title="Release" href="https://github.com/dbm-network/mods/releases" target="_blank">
     <img src="https://img.shields.io/github/release/dbm-network/mods.svg?style=flat-square" alt="Latest Release" />
