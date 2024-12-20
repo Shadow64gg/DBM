@@ -15,7 +15,7 @@ Poniżej masz instrukcję jak pobrać i wgrać mody do swojego bota.
 
 | Pakiet    |                                                        Linki Do Pobrania                                                         |
 | ---------- | :--------------------------------------------------------------------------------------------------------------------------: |
-| Actions    |  [Pobierz](test)   |
+| Actions    |  [Pobierz](actions)   |
 | Events     |   [Pobierz](test)   |
 | Extensions | [Pobierz](test) |
 
