@@ -1,0 +1,56 @@
+{
+  "name": "level",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "BWhWx",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "member",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "lvl",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "lvl",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "xp",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "xp",
+      "name": "Store Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${tempVars(\"member\")}\nTwój level: ${tempVars(\"lvl\")}\nTwój xp: ${tempVars(\"xp\")}",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "4",
+  "description": "Użyj aby sprawdzić swój level."
+}
