@@ -1,0 +1,14 @@
+// ENG:
+1. Don't forget to set the folder names of your bots in the script.
+2. Your bot launcher files should be named "bot.js".
+3. You can enable/disable auto launch of bots when they turn off or when an error occurs in them.
+4. You can set the time after which the bots should be launched automatically if they turn off.
+5. Need help? Join discord https://discord.gg/9HYB4n3Dz4
+
+
+// PL:
+1. Nie zapomnij ustawić nazwy folderów swoich botów w skrypcie.
+2. Twoje pliki uruchamiające boty powinny się nazywać "bot.js".
+3. Możesz włączyć/wyłączyć auto uruchamianie botów gdy one się wyłączą lub gdy wystąpi w nich błąd.
+4. Możesz ustawić czas po jakim mają się automatycznie uruchamiać boty w przypadku gdy się wyłączą.
+5. Potrzebujesz pomocy? Wbij na discord https://discord.gg/9HYB4n3Dz4
