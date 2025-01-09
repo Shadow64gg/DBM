@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = {
   name: "Generate",
-  section: "DBM POLAND",
+  section: "Economy",
   meta: {
     version: "2.1.9",
     preciseCheck: false,

@@ -2,7 +2,7 @@ const fs = require("fs");
 
 module.exports = {
   name: "Automod",
-  section: "DBM POLAND",
+  section: "Moderation",
   subtitle(data) {
     const wordCount = data.words?.length || 0;
     return `${wordCount} moderated words configured`;

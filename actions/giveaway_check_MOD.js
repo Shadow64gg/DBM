@@ -3,7 +3,7 @@ const fs = require("fs");
 module.exports = {
   name: "Giveaway Check Member",
 
-  section: "Economy",
+  section: "Giveaway",
 
   subtitle(data, presets) {
     return `${presets.getConditionsText(data)}`;
