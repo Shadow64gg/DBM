@@ -40,12 +40,97 @@ module.exports = {
   //---------------------------------------------------------------------
   html(isEvent, data) {
     return `
-    <div>
-      <p>
-          <u>Mod Info:</u><br>
-          Created by Shadow<br>
-          Help: https://discord.gg/9HYB4n3Dz4<br>
-      </p>
+    <div class="dbmmodsbr1" style="height: 59px;">
+  <p>Mod Info:</p>
+  <p>Created by Shadow</p>
+  <p>Help: <a href="https://discord.gg/9HYB4n3Dz4" target="_blank" style="color: #00aaff; text-decoration: none;">discord</a></p>
+</div>
+
+<style>
+.dbmmodsbr1 {
+  position: absolute;
+  bottom: 0px;
+  border: 2px solid rgba(50, 50, 50, 0.7);
+  background: rgba(0, 0, 0, 0.7);
+  color: #999;
+  padding: 5px;
+  font-size: 12px;
+  left: 0px;
+  z-index: 999999;
+  cursor: default;
+  line-height: 1.2;
+  border-radius: 8px;
+  height: 59px;
+  width: auto;
+  transition: transform 0.3s ease, background-color 0.6s ease, color 0.6s ease;
+}
+.dbmmodsbr1:hover {
+  transform: scale(1.01);
+  background-color: rgba(29, 29, 29, 0.9);
+  color: #fff;
+}
+.dbmmodsbr1 p {
+  margin: 0;
+  padding: 0;
+}
+.dbmmodsbr1 a {
+  font-size: 12px;
+  color: #00aaff;
+  text-decoration: none;
+}
+.dbmmodsbr1 a:hover {
+  text-decoration: underline;
+}
+</style>
+
+
+
+<div
+  class="dbmmodsbr2"
+  data-url="https://github.com/Shadow64gg/DBM"
+  onclick="openExternalLink(event, 'https://github.com/Shadow64gg/DBM')"
+>
+  <p>Mod Version:</p>
+  <p>1.1</p>
+</div>
+
+<style>
+.dbmmodsbr2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border: 0px solid rgba(50, 50, 50, 0.7);
+  background: rgba(0, 0, 0, 0.7);
+  color: #999;
+  padding: 5px;
+  font-size: 12px;
+  z-index: 999999;
+  cursor: pointer;
+  line-height: 1.2;
+  border-radius: 8px;
+  text-align: center;
+  height: auto;
+  transition: transform 0.3s ease, background-color 0.6s ease, color 0.6s ease;
+}
+
+.dbmmodsbr2:hover {
+  transform: scale(1.01);
+  background-color: rgba(29, 29, 29, 0.9);
+  color: #fff;
+}
+
+.dbmmodsbr2 p {
+  margin: 0;
+  padding: 0;
+}
+</style>
+
+<script>
+function openExternalLink(event, url) {
+  event.preventDefault();
+  window.open(url, "_blank");
+}
+</script>
     </div><br>
 
     <div style="padding: 8px;">
@@ -100,9 +185,16 @@ module.exports = {
     }
 
     const currentChannelData = lastLetterData[channelID];
-    const messageContent = cache.msg.content.trim();
-    const firstLetter = messageContent[0].toLowerCase();
-    const lastLetter = messageContent.slice(-1).toLowerCase();
+
+    let messageContent, firstLetter, lastLetter;
+    try {
+      messageContent = cache.msg.content.trim();
+      firstLetter = messageContent[0].toLowerCase();
+      lastLetter = messageContent.slice(-1).toLowerCase();
+    } catch (error) {
+      // Ignoruje błąd bez wyświetlania go w konsoli
+      return; // Kończy akcję w przypadku błędu
+    }
 
     // Check if the message is sent in the correct channel
     if (cache.msg.channel.id !== channelID) {
@@ -115,6 +207,22 @@ module.exports = {
       cache.msg.author.id === currentChannelData.lastUser
     ) {
       // Delete the message if the same user tries to play again
+      cache.msg.delete().catch((error) => {
+        if (error.code === 50013) {
+          console.log("Insufficient bot permissions to delete messages.");
+        } else {
+          console.error(error);
+        }
+      });
+      return; // Stop further execution
+    }
+
+    // Check if the first letter matches the last letter of the previous word
+    if (
+      currentChannelData.lastLetter &&
+      currentChannelData.lastLetter !== firstLetter
+    ) {
+      // Delete the message if the first letter does not match
       cache.msg.delete().catch((error) => {
         if (error.code === 50013) {
           console.log("Insufficient bot permissions to delete messages.");
