@@ -1,0 +1,90 @@
+{
+  "name": "epic free games",
+  "temp": "",
+  "event-type": "48",
+  "_id": "DCJcU",
+  "actions": [
+    {
+      "storage": null,
+      "varName2": null,
+      "name": "Monitoring Epic Games API"
+    },
+    {
+      "storage": "1",
+      "varName2": "title",
+      "infoType": "0",
+      "currency": "USD",
+      "name": "Store Epic Free Games Info"
+    },
+    {
+      "storage": "1",
+      "varName2": "price",
+      "infoType": "1",
+      "currency": "PLN",
+      "name": "Store Epic Free Games Info"
+    },
+    {
+      "storage": "1",
+      "varName2": "image",
+      "infoType": "3",
+      "currency": "USD",
+      "name": "Store Epic Free Games Info"
+    },
+    {
+      "storage": "1",
+      "varName2": "link",
+      "infoType": "4",
+      "currency": "USD",
+      "name": "Store Epic Free Games Info"
+    },
+    {
+      "storage": "1",
+      "varName2": "description",
+      "infoType": "5",
+      "currency": "USD",
+      "name": "Store Epic Free Games Info"
+    },
+    {
+      "storage": "1",
+      "varName2": "timestamp",
+      "infoType": "6",
+      "currency": "USD",
+      "name": "Store Epic Free Games Info"
+    },
+    {
+      "channel": "103",
+      "varName": "1326024538764345487",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "${tempVars(\"title\")}",
+          "url": "",
+          "color": "DARKBLUE",
+          "timestamp": "false",
+          "imageUrl": "${tempVars(\"image\")}",
+          "thumbUrl": "",
+          "description": "> - **Otwórz:**\n> [Epicgames.com](${tempVars(\"link\")})\n> \n> - 🔴${tempVars(\"timestamp\")}\n> \n> - **${tempVars(\"price\")}zł  ➜ Za darmo!**\n> \n> - **Opis Gry:**\n> ${tempVars(\"description\")}",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}
