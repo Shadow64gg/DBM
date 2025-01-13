@@ -1,0 +1,4 @@
+
+node_modules/.bin/bin-version-check.cmd
+*.ps1
+node_modules/.bin/mkdirp
