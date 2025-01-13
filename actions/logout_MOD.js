@@ -2,7 +2,7 @@ const fs = require("fs"); // File handling module import
 
 module.exports = {
   name: "Logout",
-  section: "Other Stuff",
+  section: "Accounts",
   meta: {
     version: "2.1.9",
     preciseCheck: false,

@@ -2,7 +2,7 @@ const fs = require("fs"); // Import modułu do obsługi plików
 
 module.exports = {
   name: "Change Password",
-  section: "Other Stuff",
+  section: "Accounts",
   meta: {
     version: "2.1.9",
     preciseCheck: false,

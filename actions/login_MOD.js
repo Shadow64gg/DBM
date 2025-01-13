@@ -2,7 +2,7 @@ const fs = require("fs");
 
 module.exports = {
   name: "Login",
-  section: "Other Stuff",
+  section: "Accounts",
   meta: {
     version: "2.1.9",
     preciseCheck: false,
