@@ -2,7 +2,7 @@ const fs = require("fs"); // Import modułu do obsługi plików
 
 module.exports = {
   name: "Change Password",
-  section: "Accounts",
+  section: "Other Stuff",
   meta: {
     version: "2.1.9",
     preciseCheck: false,
@@ -129,6 +129,8 @@ module.exports = {
     <span class="dbminputlabel">New Password</span>
     <input id="newPassword" class="round" type="password" style="width: 100%; padding: 8px; font-size: 14px; border-radius: 4px; border: 1px solid #ccc;">
   </div>
+
+  <hr class="subtlebar" style="width: 100%; margin-top: 30px; margin-bottom: 30px;">
 
   <!-- Conditional Input -->
   <div style="width: 100%; margin-bottom: 10px;">

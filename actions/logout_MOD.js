@@ -2,7 +2,7 @@ const fs = require("fs"); // File handling module import
 
 module.exports = {
   name: "Logout",
-  section: "Accounts",
+  section: "Other Stuff",
   meta: {
     version: "2.1.9",
     preciseCheck: false,
@@ -124,6 +124,8 @@ module.exports = {
     <input id="password" class="round" type="password" style="width: 100%; padding: 8px; font-size: 14px; border-radius: 4px; border: 1px solid #ccc;">
   </div>
   
+  <hr class="subtlebar" style="width: 100%; margin-top: 30px; margin-bottom: 30px;">
+
   <!-- Conditional Input -->
   <div style="width: 100%; margin-bottom: 10px;">
     <conditional-input id="branch" style="width: 100%;"></conditional-input>
