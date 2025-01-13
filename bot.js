@@ -785,9 +785,11 @@ Bot.login = function () {
 
 Bot.onReady = function () {
   process.send?.("BotReady");
-  console.log("------------------------"); // Wiadomość po włączeniu bota!
-  console.log("   🟩 BOT WŁĄCZONY 🟩  ");
+  console.log(""); // Wiadomość po włączeniu bota!
   console.log("------------------------");
+  console.log("Bot Włączony");
+  console.log("------------------------");
+  console.log("");
   this.restoreVariables();
   this.registerApplicationCommands();
   this.preformInitialization();
