@@ -4,6 +4,8 @@
   </a>
 </p>
 
+# Wstęp
+
 [![Discord](https://img.shields.io/discord/1301396266479124501?label=discord)](https://discord.gg/9HYB4n3Dz4)
 
 
