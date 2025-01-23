@@ -7,6 +7,7 @@
 # Wstęp
 
 [![Discord](https://img.shields.io/discord/1301396266479124501?label=discord)](https://discord.gg/9HYB4n3Dz4)
+![GitHub contributors](https://img.shields.io/github/contributors/shadow64gg/DBM-13)
 
 
 [DBM POLSKA](https://discord.gg/9HYB4n3Dz4) to projekt open source kierowany przez społeczność, którego celem jest modyfikowanie, rozszerzanie i ulepszanie [Discord Bot Maker](https://store.steampowered.com/app/682130/Discord_Bot_Maker/).
