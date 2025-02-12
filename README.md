@@ -20,10 +20,10 @@ Poniżej masz instrukcję jak pobrać i wgrać mody do swojego bota.
 
 | Pakiet    |                                                        Linki Do Pobrania                                                         |
 | ---------- | :--------------------------------------------------------------------------------------------------------------------------: |
-| Actions    |  [Pobierz](https://dbm-network.github.io/download-git/#/home?url=https://github.com/Shadow64gg/DBM/tree/main/actions)   |
-| Events     |   [Pobierz](https://dbm-network.github.io/download-git/#/home?url=https://github.com/Shadow64gg/DBM/tree/main/events)   |
-| Extensions | [Pobierz](https://dbm-network.github.io/download-git/#/home?url=https://github.com/Shadow64gg/DBM/tree/main/extensions) |
-| Raw Data | [Pobierz](https://dbm-network.github.io/download-git/#/home?url=https://github.com/Shadow64gg/DBM/tree/main/raw%20data) |
+| Actions    |  [Pobierz](https://shadow64gg.github.io/DBM-DownGit/#/home?url=https://github.com/Shadow64gg/DBM-13/tree/DBM-v13/actions)   |
+| Events     |   [Pobierz](https://shadow64gg.github.io/DBM-DownGit/#/home?url=https://github.com/Shadow64gg/DBM-13/tree/DBM-v13/events)   |
+| Extensions | [Pobierz](https://shadow64gg.github.io/DBM-DownGit/#/home?url=https://github.com/Shadow64gg/DBM-13/tree/DBM-v13/extensions) |
+| Raw Data | [Pobierz](https://shadow64gg.github.io/DBM-DownGit/#/home?url=https://github.com/Shadow64gg/DBM-13/tree/DBM-v13/raw%20data) |
 
 2.  Na górnym pasku Discord Bot Maker kliknij Project → Open Project Directory (otworzy się folder twojego bota)
 3.  Wyodrębnij zawartość pliku .zip oraz wrzuć mody do odpowiedniego folderu
